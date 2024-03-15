@@ -14,7 +14,7 @@ const Type = () => {
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 300,
+        deleteSpeed: 1000,
       }}
     />
   );
