@@ -11,18 +11,31 @@ const Resume = ({ setPath }) => {
         <Container classname="lg:my-12">
           <div className="flex flex-col gap-12 md:px-4 xl:px-14 2xl:px-28 mt-8">
             <ExperienceCard 
-              tenure="JUN 2021 - PRESENT" 
+              tenure="Feb 2023 - PRESENT" 
+              company="AdGlobal360" 
+              position="MERN Stack Developer"  
+              content={
+                [
+                  "Building country specific Lead Qualification System for the client dashboard [Suzuki Global]",
+                  "Key responsibility includes creating cross platform RESTful APIS, designing dashboard components, managing AWS services for different country environments.",
+                  "Some of the commonly used AWS services - Lambda, API Gateway, S3, Secret Manager, SQS, Code Commit.",
+                  "Tools & Technologies used - NestJS, NextJS, TailwindCSS, MongoDB, Git, AWS, Swagger API" 
+                ]
+              }
+            />
+            <ExperienceReverseCard
+              tenure="JUN 2021 - Feb 2023" 
               company="Plaxonic Technologies" 
               position="Software Engineer"  
               content={
               [
-                "Working with multiple product development modules as both frontend & backend asset",
+                "Worked with multiple product development modules as both frontend & backend asset",
                 "Got Excellence award 2021-2022",
                 "Tools & Technologies - NextJS, NodeJS, Express, MongoDB, ReactJS, Postman, TailwindCSS, Docker",
               ]
               }
             />
-            <ExperienceReverseCard 
+            <ExperienceCard 
               tenure="Nov 2020 - Jun 2021" 
               company="Plaxonic Technologies" 
               position="Software Engineer,Intern"  
@@ -35,7 +48,7 @@ const Resume = ({ setPath }) => {
               ]
               }
             />
-            <ExperienceCard 
+            <ExperienceReverseCard 
               tenure="JULY 2020 - Oct 2020" 
               company="Qxf2 Services" 
               position="Software Engineer,Intern"  
@@ -48,7 +61,7 @@ const Resume = ({ setPath }) => {
               ]
               }
             />
-            <ExperienceReverseCard 
+            <ExperienceCard 
               tenure="Feb 2020 - May 2020" 
               company="Notchup" 
               position="Curriculum Developer"  

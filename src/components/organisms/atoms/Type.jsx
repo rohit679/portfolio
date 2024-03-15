@@ -7,14 +7,14 @@ const Type = () => {
       options={{
         skipAddStyles: false,
         strings: [
-          "Software Engineer @Plaxonic Technologies",
-          "Technical Content Writer @GeeksForGeeks",
+          "MERN Stack Developer @AdGlobal360",
+          "3+ Years of Industry Experience",
           "Open Source Contributor",
           "3 Star LeetCode"
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 1000,
+        deleteSpeed: 50,
       }}
     />
   );

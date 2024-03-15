@@ -3,7 +3,7 @@ import Text from "../../organisms/atoms/Text";
 import { motion } from "framer-motion";
 
 const ExperienceCard = ({ tenure, company, position, content }) => {
-  const items = ["🔰", "🌟", "✅", "🌈", "📌"];
+  const items = ["🔰", "🌟", "✅", "🌈", "📌", "👉"];
   var item1 = items[Math.floor(Math.random()*items.length)];
   return (
     <motion.div 
@@ -40,7 +40,7 @@ const ExperienceCard = ({ tenure, company, position, content }) => {
 };
 
 const ExperienceReverseCard = ({ tenure, company, position, content }) => {
-  const items = ["🔰", "🌟", "✅", "🌈", "📌"];
+  const items = ["🔰", "🌟", "✅", "🌈", "📌", "👉"];
   var item1 = items[Math.floor(Math.random()*items.length)];
   return (
     <motion.div 

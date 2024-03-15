@@ -29,7 +29,7 @@ function App() {
   return (
     <Router>
       <PreLoader isLoading={isLoading} />
-      <div className="text-white bg-gray-800 w-full" id={isLoading ? "no-scroll" : "scroll"}>
+      <div className="text-white bg-[#0c1a22] w-full" id={isLoading ? "no-scroll" : "scroll"}>
         <NavBar activePath={activePath} />
         <ScrollToTop/>
         <Routes>

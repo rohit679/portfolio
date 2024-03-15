@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Container from '../../organisms/atoms/container';
-import Text from '../../organisms/atoms/Text';
-import SkillCard from '../../organisms/molecules/skillCard'; 
-import aboutBg from '../../../assets/myPic3.png';
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
@@ -26,11 +22,14 @@ import {
   SiAmazonaws,
 } from "react-icons/si";
 import GitHubCalendar from "react-github-calendar";
-import { EducationCard, EducationReverseCard } from "../../organisms/molecules/educationCard";
 import { motion } from "framer-motion";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-
+import Container from '../../organisms/atoms/container';
+import Text from '../../organisms/atoms/Text';
+import SkillCard from '../../organisms/molecules/skillCard'; 
+import aboutBg from '../../../assets/myPic3.png';
+import { EducationCard, EducationReverseCard } from "../../organisms/molecules/educationCard";
 
 const About = ({ setPath }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,13 +38,13 @@ const About = ({ setPath }) => {
       setIsLoading(false);
     }, 1000);
     setPath(window.location.pathname);
-  }, []);
+  });
   return (
     <div id="home" className="home-section flex flex-col gap-20">
       <Container>
         <div className="flex flex-col lg:flex-row gap-8 lg:py-20 items-center">
           <div className="flex flex-1">
-            <div className="flex flex-col w-full gap-4 lg:px-12">
+            <div className="flex flex-col w-full gap-4 lg:pr-12">
               {
                 isLoading ? (
                   <div className="mx-64 my-4">
@@ -64,12 +63,18 @@ const About = ({ setPath }) => {
                   <Skeleton baseColor="#6e6a6a" highlightColor="#d9d0d0" count="10" style={{marginBottom: '0.6rem'}} />
                 ) : (
                   <div>
-                    <Text size="sm">Hi Everyone, This is <span className="text-baseCol font-bold">Rohit Prasad</span>. Born & brought up in <span className="text-[#bcfd49]">Kolkata, India.</span></Text>
-                    <Text size="sm"><span className="text-baseCol font-bold">2021 BTECH</span> Graduate in <span className="font-bold">Computer Science Engineering</span> from <span className="text-[#bcfd49]"> Amritsar Group of Colleges</span></Text>
-                    <Text size="sm">Worked with multiple companies like <span className="text-baseCol">NotchUp, Qxf2 Services, GeeksforGeeks & Plaxonic Technologies</span> over the span of <span className="text-baseCol font-bold">2 years.</span></Text>
-                    <Text size="sm">Currently working as a <span className="text-baseCol font-bold">Software Engineer</span> at Plaxonic Technologies.</Text>
-                    <Text size="sm">Having a quite good understanding of <span className="text-baseCol">Data Structures & Algorithm</span></Text>
-                    <Text size="sm">Die Heart fan of <span className="text-baseCol">Manchester United</span> in English Premier league, love to watch matches in my spare time.</Text>
+                    <Text size="sm">✅
+ Hi There, This is <span className="text-baseCol font-bold">Rohit Prasad</span>. Born & brought up in <span className="text-baseCol">Kolkata 🇮🇳
+.</span></Text>
+                    <Text size="sm">✅
+<span className="text-baseCol font-bold"> 2021 BTECH</span> Graduate 🎓 in <span className="font-bold">Computer Science Engineering</span> from <span className="text-baseCol"> PTU, India.</span></Text>
+                    <Text size="sm">✅
+Results oriented <span className='font-bold'>Software Developer</span> with a solid foundation of <span className='font-bold text-baseCol'>3+ years</span> of experience in the Software Industry.</Text>
+                    <Text size="sm">✅ Having robust skill set and a proven track record of success in developing and implementing solutions using the <span className='font-bold text-baseCol'>MERN stack</span>.</Text>
+                    <Text size="sm">✅
+ Having a quite good understanding of <span className="text-baseCol">Data Structures & Algorithm 💻</span></Text>
+                    <Text size="sm">✅
+ Die Heart fan of <span className="text-baseCol">Manchester United</span> in English Premier league ⚽︎, love to watch matches in my spare time.</Text>
                   </div>
                 )
               }
@@ -84,7 +89,7 @@ const About = ({ setPath }) => {
               ) : (
                 <div>
                   <motion.img 
-                  src={aboutBg} className="w-[20rem] shadow-white hover:shadow-baseCol shadow-lg hover:shadow-xl rounded-[10rem]" 
+                  src={aboutBg} className="w-[20rem] shadow-white hover:shadow-baseCol shadow-md hover:shadow-lg rounded-[10rem]" 
                   initial={{ opacity: 0.5, scaleY: 0.95 }}
                   animate={{ opacity: 1, scaleY: 1 }}
                   />
