@@ -29,13 +29,13 @@ const ProjectCard = ({ imgUrl, title, children, btnText, btnUrl='/' }) => {
             <Skeleton baseColor="#6e6a6a" highlightColor="#d9d0d0" height={190} />
           </div>
         ) : (
-          <img src={imgUrl} alt="Project Image" alt="nothing" />
+          <img src={imgUrl} alt="project card" />
         )
       }
         <Text classname="font-bold text-baseCol">{title || <Skeleton />}</Text>
         <Text size="xs" classname="flex justify-items-center">{children}</Text>
         <div className="flex flex-1 items-end">
-          <a href={btnUrl} target="_blank">
+          <a href={btnUrl} target="_blank" rel="noreferrer">
             <div className="px-4 py-2 bg-baseCol text-black flex gap-2 items-center rounded">
               <BiLinkExternal />
               <Text size="xs" classname="capitalize">{btnText}</Text>

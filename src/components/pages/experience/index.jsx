@@ -1,14 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from '../../organisms/atoms/container';
 import { ExperienceCard, ExperienceReverseCard } from '../../organisms/molecules/experienceCard';
+import { CodeSetup } from "../../organisms/atoms/images";
+import Skeleton from "react-loading-skeleton";
 
 const Resume = ({ setPath }) => {
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
     setPath(window.location.pathname);
-  }, []);
+  });
   return (
     <div className="home-section">
         <Container classname="lg:my-12">
+          <div className="flex justify-center items-center">
+            <CodeSetup width="500px" />
+          </div>
           <div className="flex flex-col gap-12 md:px-4 xl:px-14 2xl:px-28 mt-8">
             <ExperienceCard 
               tenure="Feb 2023 - PRESENT" 
