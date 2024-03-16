@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Container from '../../organisms/atoms/container';
 import { ExperienceCard, ExperienceReverseCard } from '../../organisms/molecules/experienceCard';
 import { CodeSetup } from "../../organisms/atoms/images";
-import Skeleton from "react-loading-skeleton";
 
 const Resume = ({ setPath }) => {
-  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
     setPath(window.location.pathname);
   });
   return (
