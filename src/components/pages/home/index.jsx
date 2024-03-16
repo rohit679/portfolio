@@ -4,7 +4,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 import { CodeBuddy } from "../../organisms/atoms/images";
-import Particles from "../../organisms/molecules/particles";
+// import Particles from "../../organisms/molecules/particles";
+import ParticlesComponent from '../../organisms/atoms/particles';
 import Container from "../../organisms/atoms/container";
 import Type from "../../organisms/atoms/Type";
 import Text from "../../organisms/atoms/Text";
@@ -18,7 +19,7 @@ const Home = ({ setPath }) => {
   return (
     <div className="home-section flex flex-col" id="home">
       <Container classname="lg:my-20 xl:my-40 z-10">
-        <Particles />
+      <ParticlesComponent id="particles" />
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-8 w-full">
           <div className="flex flex-1 text-white">
             <div className="flex flex-col lg:gap-3 md:py-10 w-full px-4">

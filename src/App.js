@@ -13,6 +13,7 @@ import Experience from './components/pages/experience';
 import Articles from './components/pages/articles';
 import PreLoader from './components/organisms/utils/preloader';
 import NavBar from './components/organisms/molecules/navbar';
+import './App.css';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
